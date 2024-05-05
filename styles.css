@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pokemon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 10px solid #0d0000; 
+    box-sizing: border-box; 
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5px;
+    color: #0b0909;
+}
+
+#pokedex {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pokemon {
+    width: calc(20% - 20px); 
+    margin: 10px; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: rgba(50, 50, 50, 0.8); 
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border: 2px solid #333; 
+}
+
+.pokemon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.pokemon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.pokemon h2 {
+    margin-top: 5px;
+    font-size: 14px; 
+}
+
+/* Style for search input and button */
+#searchContainer {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#searchInput {
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 200px; 
+    margin-right: 10px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #333;
+}
+
+#searchButton {
+    padding: 1px 10px;
+    border-radius: 10px;
+    background-color: #010101;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #333; 
+}
+
